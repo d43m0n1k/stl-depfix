@@ -10,7 +10,7 @@ The script automatically checks for the following dependencies and installs or u
 
     awk-gawk
     git
-    pgrep
+    procps-ng (pgrep dep)
     unzip
     wget
     xdotool
