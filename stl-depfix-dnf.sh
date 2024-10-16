@@ -21,7 +21,7 @@ for ((i=0; i<=${#string}; i++)); do
 done 
 
 # Check for required dependencies and install if missing
-dependencies=(git glib2-devel libtool autoconf automake intltool gtk3-devel make gcc gcc-c++ xdotool unzip wget xprop xrandr xxd xwininfo gawk)
+dependencies=(git glib2-devel libtool autoconf automake intltool gtk3-devel make gcc gcc-c++ xdotool unzip procps-ng wget xprop xrandr xxd xwininfo gawk)
 
 for package in "${dependencies[@]}"; do
     if ! rpm -q "$package" &> /dev/null; then
